@@ -2,8 +2,22 @@ package task4;
 
 public class Monitor implements IMonitor {
 
+    private String name;
+
+    public Monitor(String name) {
+        this.name = name;
+    }
+
+
+    public Monitor() {
+    }
+
     @Override
     public String getName() {
-        return null;
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
